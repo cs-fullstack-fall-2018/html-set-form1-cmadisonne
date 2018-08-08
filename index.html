@@ -1,3 +1,12 @@
+<!-- 
+
+KEY: Where are my comments?! Please get in the habit of including at least one comment at the top of every submission saying what the code is doing. Can be brief, but needs to be there :-) 
+
+KEY: Good job overall as this was a complicated exercise. Note comments inline. Missing the 'form' element and radio button grouping was really your only issues.
+
+You are really doing a great job. You and Myiah are destroying the the Guys :-P
+
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,63 +14,68 @@
     <title>Title</title>
 </head>
 <body>
-<table>
+<form> <!-- KEY: You need to wrap these items in a 'form' tag for submission to work -->
+    <table>
 
-    <thead>
-    <tr>
-       <td>
-           <label for="first-name">First Name: </label>
-           <input type="text" name="first-name" id="first-name" placeholder="Enter your name"/>
-       </td>
+        <thead>
+        <tr>
+            <td>
+                <label for="first-name">First Name: </label>
+                <input type="text" name="first-name" id="first-name" placeholder="Enter your name"/>
+            </td>
 
-        <td>
-            <label for="last-name">Last Name: </label>
-            <input type="text" name="last-name" id="last-name" placeholder="Enter your name"/>
-        </td>
+            <td>
+                <label for="last-name">Last Name: </label>
+                <input type="text" name="last-name" id="last-name" placeholder="Enter your name"/>
+            </td>
 
-        <td>
-            <label for="radio-choice-1">New Applicant</label>
-            <input type="radio" name= "radio-choice-1" id="radio-choice-1" value="choice-1">
-            <br>
-            <label for="radio-choice-2">Existing</label>
-            <input type="radio" name="radio-choice-2" id="radio-choice-2" value="choice-2">
+            <td>
+                <!--
+                KEY: For radio buttons to work as a same group, give them all the same name so only one can
+                be selected. They can still have/submit different 'values'
+            -->
+                <label for="radio-choice-1">New Applicant</label>
+                <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1">
+                <br>
+                <label for="radio-choice-2">Existing</label>
+                <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2">
 
-        </td>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>
-            <label for="select-choice">Postion</label>
-            <select name="select-choice" id="select-choice">
-                <option value="Developer">Developer</option>
-                <option value="Software Engineer">Software Engineer</option>
-                <option value="Software Developer">Software Developer</option>
-            </select>
-        </td>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <label for="select-choice">Position</label> <!-- minor typo :-) -->
+                <select name="select-choice" id="select-choice">
+                    <option value="Developer">Developer</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Software Developer">Software Developer</option>
+                </select>
+            </td>
 
-    </tr>
-    <tr>
-        <td>
-            <br>
-        </td>
-        <td>
-            <label for="checkbox">I agree that all the information in this form is correct.</label>
-            <input type="checkbox" name="checkbox" id="checkbox"/>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <br>
-        </td>
-        <td>
-            <br>
-            <input type="submit" value="Submit"/>
-        </td>
-    </tr>
-    </tbody>
+        </tr>
+        <tr>
+            <td>
+                <br>
+            </td>
+            <td>
+                <label for="checkbox">I agree that all the information in this form is correct.</label>
+                <input type="checkbox" name="checkbox" id="checkbox"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br>
+            </td>
+            <td>
+                <br>
+                <input type="submit" value="Submit"/>
+            </td>
+        </tr>
+        </tbody>
 
-</table>
-
+    </table>
+</form>
 </body>
 </html>
